@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Silviana Nuraulia_2120003_WPII_2.6B</title>
+<style>
+    /* CSS styles */
+    body {
+        font-family: Arial, sans-serif;
+    }
+    #inputField {
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 4px;
+    }
+    #displayArea {
+        margin-top: 20px;
+        padding: 10px;
+        border: 2px solid #ccc;
+        border-radius: 5px;
+    }
+</style>
+</head>
+<body>
+    <!-- HTML content -->
+    <input type="text" id="inputField" placeholder="Enter text...">
+    <button onclick="displayText()">Display</button>
+    <div id="displayArea"></div>
+
+    <!-- JavaScript code -->
+    <script>
+        function displayText() {
+            // Get the input value
+            var inputText = document.getElementById("inputField").value;
+
+            // Get the display area
+            var displayArea = document.getElementById("displayArea");
+
+            // Display the input value
+            displayArea.innerText = inputText;
+        }
+    </script>
+</body>
+</html>
